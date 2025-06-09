@@ -777,3 +777,61 @@ footer {
     justify-content: space-between;
     padding: 0 5px;
 }
+
+
+/* Hero Buttons Styles */
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+    animation: fadeInUp 1s ease 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.cta-button, .resume-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: var(--transition);
+    font-weight: 500;
+    border: none;
+    width: 180px;
+    height: 50px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Remove individual button animations */
+.cta-button {
+    animation: none;
+    opacity: 1;
+}
+
+/* Hover effects */
+.cta-button:hover, .resume-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cta-button, .resume-button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
