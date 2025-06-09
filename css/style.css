@@ -750,3 +750,30 @@ footer {
     background: var(--card-bg);
     border-color: var(--border-color);
 }
+
+
+/* Theme Switch */
+.theme-switch {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Update toggle label styles */
+.toggle-label {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #e2e8f0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
