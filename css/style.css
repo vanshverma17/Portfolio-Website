@@ -698,3 +698,55 @@ footer {
         font-size: 1.1rem;
     }
 }
+
+
+/* Dark Mode specific styles */
+.dark-mode {
+    --primary-color: #60a5fa;
+    --secondary-color: #3b82f6;
+    --background-color: #0f172a;
+    --text-color: #e2e8f0;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Update header styles for dark mode */
+.dark-mode header {
+    background: rgba(15, 23, 42, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Update project card styles for dark mode */
+.dark-mode .project-card {
+    background: var(--card-bg);
+}
+
+/* Update skill card styles for dark mode */
+.dark-mode .skill-card {
+    background: var(--card-bg);
+}
+
+/* Update form elements for dark mode */
+.dark-mode input,
+.dark-mode textarea {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+/* Update footer styles for dark mode */
+.dark-mode footer {
+    background-color: var(--card-bg);
+}
+
+/* Update hero section for dark mode */
+.dark-mode .hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Update education cards for dark mode */
+.dark-mode .education-card {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
