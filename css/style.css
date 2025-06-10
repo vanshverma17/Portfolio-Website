@@ -206,7 +206,7 @@ header.scrolled {
 }
 
 .nav-links a {
-    color: #2563eb; /* Blue color */
+    color: var(--text-color); /* Blue color */
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -1093,9 +1093,9 @@ footer {
         left: 50%;
         transform: translateX(-50%);
     }
-    
-    .footer-social .social-links {
-        justify-content: center;
+
+    .footer-links{
+        color: var(--text-muted);
     }
     
     .footer-contact p {
