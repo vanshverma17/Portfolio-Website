@@ -57,10 +57,29 @@ body {
     --primary-color: #60a5fa;
     --secondary-color: #3b82f6;
     --background-color: #0f172a;
-    --text-color: #050709;
+    --text-color: #e2e8f0;
     --card-bg: #1e293b;
     --border-color: #334155;
     --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode a {
+    color: #60a5fa; /* Lighter blue for dark mode links */
+}
+
+.dark-mode .hero-social a {
+    background-color: #60a5fa; /* Lighter blue background for dark mode */
+    color: #0f172a; /* Dark text for contrast */
+}
+
+.dark-mode .project-links a {
+    color: #60a5fa; /* Lighter blue for dark mode links */
+    border-color: #60a5fa; /* Lighter blue border for dark mode */
+}
+
+.dark-mode .project-links a:hover {
+    background-color: #60a5fa; /* Lighter blue background on hover in dark mode */
+    color: #0f172a; /* Dark text for contrast */
 }
 
 
@@ -84,6 +103,13 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+}
+
+/* Global link styles */
+a {
+    color: #2563eb; /* Blue color for all links */
+    text-decoration: none;
+    transition: var(--transition);
 }
 
 /* Section Header Styles */
@@ -180,7 +206,7 @@ header.scrolled {
 }
 
 .nav-links a {
-    color: var(--text-color);
+    color: #2563eb; /* Blue color */
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -305,14 +331,14 @@ h2 {
 .project-links a {
     padding: 0.5rem 1rem;
     text-decoration: none;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    color: #2563eb; /* Blue color */
+    border: 1px solid #2563eb; /* Blue border */
     border-radius: 6px;
     transition: var(--transition);
 }
 
 .project-links a:hover {
-    background-color: var(--primary-color);
+    background-color: #2563eb; /* Blue background on hover */
     color: white;
 }
 
@@ -403,7 +429,7 @@ footer {
 }
 
 .social-links a {
-    color: var(--text-color);
+    color: #2563eb; /* Blue color */
     font-size: 1.5rem;
     transition: var(--transition);
 }
@@ -828,9 +854,9 @@ footer {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--bg-gray);
+    background-color: #2563eb; /* Blue background */
     border-radius: var(--border-radius-circle);
-    color: var(--text-color);
+    color: white; /* White icon color for contrast */
     transition: var(--transition);
 }
 
@@ -1372,8 +1398,13 @@ footer {
     color: var(--text-color);
 }
 
-.contact-info-content p, .contact-info-content a {
+.contact-info-content p {
     color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.contact-info-content a {
+    color: #2563eb; /* Blue color */
     text-decoration: none;
     transition: var(--transition);
 }
@@ -1553,7 +1584,7 @@ textarea {
 }
 
 .footer-links a {
-    color: var(--text-muted);
+    color: #2563eb; /* Blue color */
     text-decoration: none;
     transition: var(--transition);
     display: inline-block;
